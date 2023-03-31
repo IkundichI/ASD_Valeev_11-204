@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class RandomNumberGenerator {
 	public static void main(String[] args) throws IOException {
-		String filename = "SourcesOfTimSort/data.txt"; //Файл с данными для TimSort
+		String filename = "data.txt"; //Файл с данными для TimSort
 		int[] arrayOfCountNumbersInLine = arrayGenerate(100, 100, 10000);
 		System.out.println(Arrays.toString(arrayOfCountNumbersInLine));
 		BufferedWriter writer = new BufferedWriter(new FileWriter(filename));

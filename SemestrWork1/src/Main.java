@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
-		String filename = "SourcesOfTimSort/logsOfIteration.txt"; //Создаём файл, в который поместим все наши данные полученные от TimSort
+		String filename = "logsOfIteration.txt"; //Создаём файл, в который поместим все наши данные полученные от TimSort
 		BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
-		try (Scanner scanner = new Scanner(new File("SourcesOfTimSort/data.txt"))) { //Чтение файла
+		try (Scanner scanner = new Scanner(new File("data.txt"))) { //Чтение файла
 			while (scanner.hasNextLine()) {
 
 				String[] lineArray = scanner.nextLine().split(";");
