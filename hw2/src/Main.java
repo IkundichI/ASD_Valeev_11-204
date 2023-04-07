@@ -1,9 +1,16 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Main {
     public static void main(String[] args) {
-        Tree tree = new Tree();
-        tree.add(10);
-        tree.add(10101);
-        System.out.println(tree.find(10));
+        Tree tree = new Tree(10);
+        tree.add(5);
+        tree.add(12);
+        tree.add(234);
+        tree.add(2);
+        tree.add(6);
+        tree.levelOrderTraversal();
+
 
     }
     public static class Node {
@@ -20,6 +27,11 @@ public class Main {
         Node root;
         public Tree() {
             this.root = null;
+        }
+
+        public Tree(int value) {
+            Node node = new Node(value);
+            this.root = node;
         }
         public void add (int value) {
             root = addRec(root, value);
@@ -53,6 +65,24 @@ public class Main {
                 return contains(node.right, value);
             }
             return false;
+        }
+
+        public void levelOrderTraversal() {
+            if (root == null) {
+                return;
+            }
+            Queue<Node> queue = new LinkedList<Node>();
+            queue.add(root);
+            while (!queue.isEmpty()) {
+                Node node = queue.poll();
+                System.out.print(node.value + " ");
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
         }
 
     }
