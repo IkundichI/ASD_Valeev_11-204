@@ -1,7 +1,8 @@
 public class TwoThreeTree {
 
+    private int countOfIteration = 0; //Переменная для посчёта итераций
+
     // Приватные поля класса TwoThreeTree
-    private int countOfIteration = 0;
     private TreeNode root;
     private boolean successfulInsertion;
     private boolean successfulDeletion;
