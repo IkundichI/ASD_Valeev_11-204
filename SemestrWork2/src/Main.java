@@ -54,7 +54,7 @@ public class Main {
             countOfIterationToRemove[i] = tree.getCountOfIteration();
         }
         //Вывод данных
-        System.out.println("Информация о времени работы 2-3 Tree");
+        System.out.println("Информация о времени работы 2-3 Tree {в наносекундах}:");
         System.out.println("| Time of Insert: max -> " +
                 Arrays.stream(timeToInsert).max().getAsInt() + "; min -> " +
                 Arrays.stream(timeToInsert).min().getAsInt() + "; average -> " +
@@ -68,7 +68,7 @@ public class Main {
                 Arrays.stream(timeToRemove).min().getAsInt() + "; average -> " +
                 Arrays.stream(timeToRemove).average().getAsDouble());
 
-        System.out.println("Информация о кол-ве итераций в работе 2-3 Tree");
+        System.out.println("Информация о кол-ве итераций в работе 2-3 Tree:");
         System.out.println("| Iteration of Insert: max -> " +
                 Arrays.stream(countOfIterationToInsert).max().getAsInt() + "; min -> " +
                 Arrays.stream(countOfIterationToInsert).min().getAsInt() + "; average -> " +
