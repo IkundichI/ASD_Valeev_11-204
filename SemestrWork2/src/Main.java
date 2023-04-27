@@ -67,6 +67,8 @@ public class Main {
         printInfo("Iteration of Remove", countOfIterationToRemove);
 
     }
+
+    //Метод для печати данных об операциях
     public static void printInfo(String infoText, int[] array) {
         System.out.println("| " + infoText + ": max -> " +
                 Arrays.stream(array).max().getAsInt() + "; min -> " +
