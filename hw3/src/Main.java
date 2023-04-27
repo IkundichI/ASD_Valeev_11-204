@@ -1,5 +1,1 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-}
+//Задача о рюкзаке (на вход подаётся массвив целых чисел и вместимость рюкзака
