@@ -68,7 +68,7 @@ public class Main {
 
     }
 
-    //Метод для печати данных об операциях
+    //Метод для печати данных об операциях {remove, insert, search}
     public static void printInfo(String infoText, int[] array) {
         System.out.println("| " + infoText + ": max -> " +
                 Arrays.stream(array).max().getAsInt() + "; min -> " +
