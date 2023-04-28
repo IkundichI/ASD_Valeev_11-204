@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         //Константы, которые показываеют количество этих операций
-        final int INSERT = 10000;
-        final int SEARCH = 100;
-        final int REMOVE = 1000;
+        final int INSERT = 1000000;
+        final int SEARCH = 1000000;
+        final int REMOVE = 100000;
 
         //Массивы для хранения времени работы каждой операции
         int[] timeToInsert = new int[INSERT];
